@@ -79,11 +79,11 @@ const content = {
 		desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 		works: [
 			{
-				date: 'October 2019 - Present',
-				company: 'PT Nutech Integrasi (Telkom Group)',
-				position: 'Frontend Engineer',
-				desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-				url: "https://www.nutech-integrasi.com"
+				date: 'May 2021 - Present',
+				company: 'Orange Business Development Ltd.(orangebd)',
+				position: 'Software Engineer',
+				desc: "Last two years i have been working with Bangladesh National Portal(CMS) project. This project build with a OctoberCMS in laravel",
+				url: "https://orangebd.com/"
 			},
 			{
 				date: 'September 2021 - December 2021',
