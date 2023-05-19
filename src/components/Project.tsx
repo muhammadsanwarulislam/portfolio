@@ -24,7 +24,6 @@ const Project = () => {
         <div id='myproject' className='min-h-screen bg-soft font-dosis py-10'>
             <div className='w-10/12 mx-auto flex flex-col justify-center text-left md:text-center'>
                 <h1 className='font-bold text-4xl'>My Project</h1>
-                <p className='text-xl mt-5'>{content.work.desc}</p>
             </div>
             <div className='flex flex-col justify-center items-center mt-5'>
             {projectContent.map((company, index) => (
@@ -36,7 +35,7 @@ const Project = () => {
                     <div className='flex flex-wrap justify-center items-center w-full md:w-4/5'>
                     {company.projects.map((proj, j) => (
                         <div key={j} className='w-full md:w-2/5 m-7 flex flex-col items-center justify-center'>
-                            <LazyLoadImage effect='blur' alt='' src={proj.img_thumb} className='shadow-soft rounded-md' style={{maxHeight: 275}} />
+                            <LazyLoadImage effect='' alt='' src={proj.img_thumb} className='shadow-soft rounded-md' style={{maxHeight: 275}} />
                             <div className='flex flex-col text-center items-center bg-white rounded-lg shadow-2xl py-3 px-4 w-88 -mt-20 z-10'>
                                 <h2 className='font-bold text-lg md:text-xl'>{proj.title}</h2>
                                 <p className='text-center text-sm md:text-md mt-2 w-11/12'>{proj.short_desc}</p>
