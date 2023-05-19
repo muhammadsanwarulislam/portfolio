@@ -8,7 +8,7 @@ const About = () => {
             <div className='w-11/12 md:w-2/5 flex flex-wrap justify-center mt-10 md:mt-0'>
             <span key="" 
                     className='animate-refloat w-40 h-40 m-4 p-4 bg-soft shadow-2xl hover:shadow flex justify-center items-center rounded-full cursor-pointer anim'>
-                        <LazyLoadImage src='assets/img1.jpg' alt="" effect='blur' />
+                        <LazyLoadImage src='assets/img1.jpg' alt="" effect='' />
                     </span>
                 <table className='table-fixed border-4 border-indigo-200 border-x-indigo-500'>
                     <tbody>
@@ -66,7 +66,7 @@ const About = () => {
                 <p className='mt-5 w-11/12 md:max-w-xl text-lg md:text-xl text-justify'>{content.stack.desc}.</p>
                 <div className='flex flex-row items-center font-bold m-3' style={{ color: '#091c29' }}>
                     <span><FaDatabase size={22} /></span>
-                    <p className='ml-3 text-xl text-left'>Backend</p>
+                    <p className='ml-3 text-xl text-left'>Backend Developer</p>
                 </div>
             </div>
         </div>
