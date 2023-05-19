@@ -15,7 +15,7 @@ const Header = () => {
             <div className='w-10/12 mx-auto flex flex-col md:flex-row-reverse justify-between items-center'>
                 <div className='w-full md:w-2/6'>
                     <LazyLoadImage 
-                        effect='blur'
+                        effect=''
                         src={content.header.img}
                         alt="" placeholderSrc={content.header.imgPlaceholder}
                         className='w-full mx-auto'
