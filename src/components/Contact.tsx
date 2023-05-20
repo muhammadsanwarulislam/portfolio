@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link as ScrollLink } from 'react-scroll';
 import content from '../content'
@@ -25,7 +25,7 @@ const Contact = () => {
                             <a key={index} href={`${sosmed.url}`} className='mx-2' target="_blank" rel="noopener noreferrer">
                                 <span>
                                     <LazyLoadImage 
-                                        src={sosmed.img} alt={sosmed.alt} effect='' width="50px" 
+                                        src={sosmed.img} alt={sosmed.alt} width="50px" 
                                         placeholderSrc={content.contact.socials[2].img}
                                         className={`${index%2===0? 'animate-newbounce' : 'animate-rebounce'}`} 
                                     />

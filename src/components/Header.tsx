@@ -15,7 +15,6 @@ const Header = () => {
             <div className='w-10/12 mx-auto flex flex-col md:flex-row-reverse justify-between items-center'>
                 <div className='w-full md:w-2/6'>
                     <LazyLoadImage 
-                        effect=''
                         src={content.header.img}
                         alt="" placeholderSrc={content.header.imgPlaceholder}
                         className='w-full mx-auto'
@@ -29,7 +28,6 @@ const Header = () => {
                     <h1 className={`${animated? '': 'translate-y-20 opacity-0'} transform transition duration-2000 text-2xl md:text-4xl text-gray-300 md:mt-5`}>
                         {content.header.text[2]}{' '}
                         <Typical
-                            className='inline-block'
                             steps={content.header.typical}
                             loop={Infinity}
                         />

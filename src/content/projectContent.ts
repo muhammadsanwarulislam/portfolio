@@ -1,4 +1,3 @@
-import content from "."
 const imgPath = `/assets/project`
 
 const projectContent = [

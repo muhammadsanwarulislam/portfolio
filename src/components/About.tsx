@@ -8,7 +8,7 @@ const About = () => {
             <div className='w-11/12 md:w-2/5 flex flex-wrap justify-center mt-10 md:mt-0'>
             <span key="" 
                     className='animate-refloat w-40 h-40 m-4 p-4 bg-soft shadow-2xl hover:shadow flex justify-center items-center rounded-full cursor-pointer anim'>
-                        <LazyLoadImage src='assets/img1.jpg' alt="" effect='' />
+                        <LazyLoadImage src='assets/img1.jpg' alt="" />
                     </span>
                 <table className='table-fixed border-4 border-indigo-200 border-x-indigo-500'>
                     <tbody>
