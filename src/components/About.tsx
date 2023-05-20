@@ -1,4 +1,3 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import content from '../content'
 import { FaDatabase } from "react-icons/fa";
 
@@ -6,10 +5,6 @@ const About = () => {
     return (
         <div className='min-h-screen flex flex-col-reverse md:flex-row justify-evenly items-center font-dosis bg-soft' id='about'>
             <div className='w-11/12 md:w-2/5 flex flex-wrap justify-center mt-10 md:mt-0'>
-            <span key="" 
-                    className='animate-refloat w-40 h-40 m-4 p-4 bg-soft shadow-2xl hover:shadow flex justify-center items-center rounded-full cursor-pointer anim'>
-                        <LazyLoadImage src='assets/img1.jpg' alt="" />
-                    </span>
                 <table className='table-fixed border-4 border-indigo-200 border-x-indigo-500'>
                     <tbody>
                         <tr>
@@ -27,6 +22,7 @@ const About = () => {
                                 <ul className='marker:text-sky-400 list-disc border border-indigo-600 pl-5 space-y-3 text-slate-500'>
                                     <li className='flex py-1 text-sm font-bold text-right'>LARAVEL</li>
                                     <li className='flex py-1 text-sm font-bold text-right'>OCTOBERCMS</li>
+                                    <li className='flex py-1 text-sm font-bold text-right'>PHALCON</li>
                                     <li className='flex py-1 text-sm font-bold text-right'>REACT JS</li>
                                 </ul>
                             </td>
@@ -44,7 +40,8 @@ const About = () => {
                             <td className='text-l font-bold text-right'>Design Patterns</td>
                             <td>
                                 <ul className='marker:text-sky-400 list-disc border border-indigo-600 pl-5 space-y-3 text-slate-500'>
-                                    <li className='flex py-1 text-sm font-bold text-right'>Repository Design Patterns</li>
+                                    <li className='flex py-1 text-sm font-bold text-right'>Repository Design Pattern</li>
+                                    <li className='flex py-1 text-sm font-bold text-right'>Service Repository Pattern</li>
                                 </ul>
                             </td>
                         </tr>
@@ -54,6 +51,7 @@ const About = () => {
                                 <ul className='marker:text-sky-400 list-disc border border-indigo-600 pl-5 space-y-3 text-slate-500'>
                                     <li className='flex py-1 text-sm font-bold text-right'>Git</li>
                                     <li className='flex py-1 text-sm font-bold text-right'>ClickUP</li>
+                                    <li className='flex py-1 text-sm font-bold text-right'>VSCODE</li>
                                 </ul>
                             </td>
                         </tr>
