@@ -37,9 +37,9 @@ const Contact = () => {
                 <LazyLoadImage 
                     src={content.contact.img} 
                     placeholderSrc={content.contact.imgPlaceholder} 
-                    alt="" effect='blur' 
+                    alt="" 
                     width="250px"
-                    className='my-10 mx-auto transition duration-3000 ease-in-out'
+                    className='my-10 mx-auto transition duration-3000 ease-in-out rounded'
                 />
             </div>
             <ScrollLink to='home' smooth={true}>
