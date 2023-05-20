@@ -17,7 +17,7 @@ const Header = () => {
                     <LazyLoadImage 
                         src={content.header.img}
                         alt="" placeholderSrc={content.header.imgPlaceholder}
-                        className='w-full mx-auto'
+                        className='w-full mx-auto rounded'
                     />
                 </div>
                 <div className='text-white font-dosis text-center md:text-left'>
