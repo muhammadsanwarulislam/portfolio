@@ -29,45 +29,9 @@ const content = {
 		title: 'Stack',
 		tech: [
 			{
-				img: '/assets/mongo.png',
-				alt: 'mongodb',
-			},
-			{
-				img: '/assets/express-js.png',
-				alt: 'express',
-			},
-			{
-				img: '/assets/logo512.png',
-				alt: 'react',
-			},
-			{
-				img: '/assets/nodejs.png',
-				alt: 'node',
-			},
-			{
-				img: '/assets/nextjs.png',
-				alt: 'nextjs',
-			},
-			{
-				img: '/assets/tailwind.png',
-				alt: 'tailwindcss',
-			},
-			{
-				img: '/assets/javascript.png',
-				alt: 'javascript',
-			},
-			{
-				img: '/assets/typescript.png',
-				alt: 'typescript',
-			},
-			{
-				img: '/assets/python.png',
-				alt: 'python',
-			},
-			{
-				img: '/assets/csharp.png',
-				alt: 'csharp',
-			},
+				skill: 'PHP',
+			}
+			
 		],
 		desc: `My aim to provide better tools for people to perform their work easily and efficiently. I believe that language are the 
 		most important tools because we use language to connect our idea. By maintaining a regular structure, 
