@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  sanwar_portfolio:
+    build:
+      context: .
+      target: development
+      dockerfile: ./docker/Dockerfile
+    image: mjuyelrana/sanwar-portfolio
+    container_name: sanwar_portfolio
+    restart: unless-stopped
+    ports:
+      - ${APP_PORT}:${EXPOSE_APP_PORT}
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: 'npm run dev'
+    tty: true
+    env_file: .env
+    networks:
+      - sanwar_portfolio
+
+#Docker Networks
+networks:
+  sanwar_portfolio:
+    name: sanwar_portfolio
+    driver: bridge
