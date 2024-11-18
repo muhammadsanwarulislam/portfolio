@@ -38,7 +38,6 @@
     </div>
   </template>
 <script lang="ts" setup>
-definePageMeta({ layout: "default" });
 
 const experiences = ref([
   {

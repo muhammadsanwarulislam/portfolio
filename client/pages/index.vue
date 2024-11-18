@@ -4,19 +4,19 @@
       <div class="pb-16 md:pb-5">
         <main class="pb-6 md:pb-0">
           <div class="space-y-20 pt-8 md:pt-16">
-            <div class="max-w-[800px] mx-auto" style="opacity: 1; transform: none; will-change: transform">
+            <div class="max-w-[800px] mx-auto">
               <div class="flex items-center max-md:flex-col max-md:space-y-8 md:space-x-16">
                 <div class="flex flex-col items-center">
                   <div
                     class="relative size-32 md:size-64 bg-main-mid dark:bg-alter-mid rounded-full border-2 border-main-dark dark:border-alter-light">
-                    <!-- <img class="rounded-full object-cover object-center"
+                    <img class="rounded-full object-cover object-center"
                       style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
-                      src="/assets/img/me.jpg" alt="sanwarul.jpg" /> -->
+                      src="/assets/img/me.jpg" alt="sanwarul.jpg" />
 
                     <div class="absolute -top-5 md:top-3 right-0 translate-x-1/4">
                       <div
                         class="backdrop-blur-md bg-main-mid/60 dark:bg-alter-mid/60 py-2 px-2 rounded-xl text-sm max-w-[150px] text-center border-2 border-main-dark dark:border-alter-light">
-                        👨&zwj;💻 Work hard
+                        👨&Succeeds;💻 Work hard
                       </div>
                     </div>
                   </div>
@@ -119,8 +119,6 @@ import UISvgLaravel from '~/components/UI/Svg/Laravel.vue';
 import UISvgJs from '~/components/UI/Svg/Js.vue';
 import UISvgMysql from '~/components/UI/Svg/Mysql.vue';
 
-definePageMeta({ layout: "default" });
-
 const languagesData = ref([
   {
     title: 'Languages',
@@ -196,7 +194,7 @@ const startAnimation = () => {
 
 .animate-marquee {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 25s linear infinite;
   width: max-content; /* Ensure the width adjusts to content */
 }
 
