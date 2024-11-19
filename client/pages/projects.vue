@@ -48,37 +48,33 @@
 </template>
 
 <script lang="ts" setup>
-import project1Image from '~/assets/img/project_1.jpg';
-import project2Image from '~/assets/img/project_2.jpg';
-import project3Image from '~/assets/img/project_3.jpg';
-
 const projects = ref([
   {
     title: 'E-Commerce Platform',
     description: 'A full-featured e-commerce platform with advanced search, payment integration, and analytics.',
     link: 'https://example.com/e-commerce',
-    image: project1Image,
+    image: '/assets/img/project_1.jpg',
     stack: ['Vue.js', 'Nuxt.js', 'Tailwind CSS', 'Node.js', 'MongoDB']
   },
   {
     title: 'Portfolio Website',
     description: 'A personal portfolio showcasing design and development projects.',
     link: 'https://example.com/portfolio',
-    image: project2Image,
+    image: '/assets/img/project_2.jpg',
     stack: ['HTML', 'CSS', 'JavaScript', 'Vue.js']
   },
   {
     title: 'Task Management App',
     description: 'A productivity app for managing tasks, projects, and teams effectively.',
     link: 'https://example.com/task-manager',
-    image: project3Image,
+    image: '/assets/img/project_1.jpg',
     stack: ['React', 'Redux', 'TypeScript', 'Firebase']
   },
   {
     title: 'Social Media Dashboard',
     description: 'An analytics dashboard for tracking social media metrics in real-time.',
     link: 'https://example.com/social-dashboard',
-    image: project1Image,
+    image: '/assets/img/project_3.jpg',
     stack: ['Angular', 'SCSS', 'Chart.js', 'Node.js']
   },
 ]);

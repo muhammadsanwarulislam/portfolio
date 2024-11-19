@@ -74,9 +74,15 @@
             </div>
         </div>
 
-        <!-- Modal -->
-        <UILanguageModal v-if="isModalOpen" :isOpen="isModalOpen" :selectedLang="selected_lang" :languages="languages"
-            @close="closeModal" @select="handleLanguageSelection" />
+        <!-- Language Switch Modal -->
+        <UILanguageSwitchModal 
+            v-if="isModalOpen" 
+            :isOpen="isModalOpen" 
+            :selectedLang="selected_lang" 
+            :languages="languages"
+            @close="closeModal" 
+            @select="handleLanguageSelection" />
+
     </header>
 </template>
 
