@@ -1,0 +1,9 @@
+{
+  "_hash": "NMh3KbUFhfZic8l9TFW5rUu3axFAy4-lAPA3EjpauRg",
+  "project": {
+    "rootDir": "/var/www/portfolio"
+  },
+  "versions": {
+    "nuxt": "3.17.5"
+  }
+}
