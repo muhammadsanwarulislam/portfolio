@@ -2,28 +2,31 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
+  compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ['./app/assets/css/main.css'],
   vite: {
     plugins: [
-      tailwindcss()
+      tailwindcss(),
     ]
   },
   app: {
     head: {
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1.0',
-      title: 'Sanwarul Islam | Software Engineer',
+      title: 'Sanwarul Islam - Software Engineer',
+      htmlAttrs: {
+        lang: 'en',
+      },
       meta: [
-        { name: 'description', content: 'Sanwarul Islam - Software Engineer Portfolio. Expert in PHP, Laravel, and Nuxt.js for building scalable web applications.' },
-        { name: 'keywords', content: 'software engineer, PHP, Laravel, Nuxt.js, web developer, portfolio, remote work' },
-        { name: 'author', content: 'Sanwarul Islam' }
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Portfolio of Sanwarul Islam, a passionate Software Engineer specializing in web development and software solutions.' },
+        { name: 'author', content: 'Sanwarul Islam' },
+        { name: 'keywords', content: 'Software Engineer, PHP, Laravel, MySQL, Nuxt.js, Vue.js, Full-Stack Developer' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' }
-      ]
-    }
-  }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      ],
+  },
+  },
 })
