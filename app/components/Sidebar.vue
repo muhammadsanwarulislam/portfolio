@@ -11,30 +11,11 @@
 
         <!-- Navigation -->
         <nav class="mt-10 space-y-3 w-full">
-            <a href="/home" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition"
-                @click.prevent="scrollToSection('home')">
-                🏠 Home
-            </a>
-            <a href="/about" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition"
-                @click.prevent="scrollToSection('about')">
-                👤 About
-            </a>
-            <a href="/projects" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition"
-                @click.prevent="scrollToSection('projects')">
-                💻 Projects
-            </a>
-            <a href="/skills" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition"
-                @click.prevent="scrollToSection('skills')">
-                🛠 Skills
-            </a>
-            <a href="/resume" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition"
-                @click.prevent="scrollToSection('resume')">
-                📄 Resume
-            </a>
-            <a href="/contact" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition"
-                @click.prevent="scrollToSection('contact')">
-                📬 Contact
-            </a>
+            <NuxtLink v-for="item in menuItems" :key="item.id" :to="`${item.id}`"
+                @click.prevent="scrollToSection(item.id)"
+                class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition">
+                {{ item.icon }} {{ item.name }}
+            </NuxtLink>
         </nav>
 
         <!-- Social Links -->
@@ -47,6 +28,13 @@
 </template>
 
 <script setup>
+const menuItems = [
+    { name: 'Home', icon: '🏠', id: '/' },
+    { name: 'About', icon: '👤', id: 'about' },
+    { name: 'Projects', icon: '💻', id: 'projects' },
+    { name: 'Skills', icon: '🛠', id: 'skills' },
+    { name: 'Resume', icon: '📄', id: 'resume' },
+]
 const scrollToSection = (id) => {
     const element = document.getElementById(id)
     if (element) {
