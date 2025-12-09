@@ -3,7 +3,7 @@
         <!-- Profile Section -->
         <div class="flex flex-col items-center">
             <img :src='`/assets/images/1.png`' alt="Profile" class="rounded-full w-32 h-32 object-cover mb-4" />
-            <h2 class="text-lg font-semibold">Full Stack Developer</h2>
+            <h2 class="text-lg font-semibold">{{ profile.personal.title }}</h2>
             <p class="text-sm text-gray-400 text-center mt-2">
                 PHP | Laravel |October CMS | PHALCON | Vue | Nuxt | MySQL | Redis
             </p>
@@ -28,8 +28,9 @@
 </template>
 
 <script setup>
-const { getSocialLinks } = useContent()
+const { getSocialLinks,getProfile } = useContent()
 const socialLinks = getSocialLinks()
+const profile = getProfile()
 
 const menuItems = [
     { name: 'Home', icon: '🏠', id: '/' },

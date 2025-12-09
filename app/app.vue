@@ -13,8 +13,8 @@
         
         <!-- Loading Text -->
         <div class="loading-text">
-          <span class="text-gradient">Sanwarul Islam</span>
-          <p class="text-subtitle">Full Stack Developer</p>
+          <span class="text-gradient">{{ profile.personal.name }}</span>
+          <p class="text-subtitle">{{ profile.personal.title }}</p>
         </div>
         
         <!-- Loading Bar -->
@@ -44,15 +44,16 @@
 import { useContent } from '~/composables/useContent'
 import { ref, onMounted, onBeforeMount } from 'vue'
 
-const { getSiteConfig } = useContent()
+const { getSiteConfig, getProfile } = useContent()
 const config = getSiteConfig()
+const profile = getProfile()
 
 const isLoading = ref(true)
 const loadingProgress = ref(0)
 
 const techStack = ['Laravel', 'Nuxt.js', 'Vue', 'PHP', 'MySQL', 'TypeScript', 'Redis']
 
-// Simulate loading progress
+
 const simulateLoading = () => {
   const interval = setInterval(() => {
     loadingProgress.value += Math.random() * 15
@@ -60,7 +61,6 @@ const simulateLoading = () => {
       loadingProgress.value = 100
       clearInterval(interval)
       
-      // Wait a bit before hiding loading screen
       setTimeout(() => {
         isLoading.value = false
       }, 500)
@@ -69,10 +69,8 @@ const simulateLoading = () => {
 }
 
 onMounted(() => {
-  // Start loading simulation
   simulateLoading()
   
-  // Set a timeout to ensure loading screen doesn't stay forever
   setTimeout(() => {
     if (isLoading.value) {
       isLoading.value = false
