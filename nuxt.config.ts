@@ -12,6 +12,8 @@ export default defineNuxtConfig({
     json: { stringify: true }
   },
   app: {
+    baseURL: '/',
+    buildAssetsDir: '/_nuxt/',
     head: {
       titleTemplate: '%s | Sanwarul Islam',
       title: 'Portfolio',
@@ -26,6 +28,11 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
-    preset: 'node-server'
+    preset: 'vercel',
+  },
+  ssr: true,
+  routeRules: {
+    '/':{ prerender: true },
+    '/**':{ prerender: true }
   }
 })
