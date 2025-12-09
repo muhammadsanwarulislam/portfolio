@@ -1,0 +1,62 @@
+{
+  "categories": [
+    {
+      "id": "languages",
+      "name": "Languages & Frameworks",
+      "icon": "💻",
+      "skills": ["PHP", "Laravel", "JavaScript", "Nuxt 3", "jQuery"]
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "icon": "🗄️",
+      "skills": ["MySQL", "Redis"]
+    },
+    {
+      "id": "tools",
+      "name": "Tools & Version Control",
+      "icon": "🔧",
+      "skills": ["Git", "ClickUp", "Composer", "npm"]
+    },
+    {
+      "id": "patterns",
+      "name": "Design Patterns",
+      "icon": "🎨",
+      "skills": ["Repository Pattern", "MVC", "Dependency Injection"]
+    },
+    {
+      "id": "auth",
+      "name": "Authentication & Authorization",
+      "icon": "🔐",
+      "skills": ["OAuth2", "Laravel Sanctum", "Token-based Authentication"]
+    },
+    {
+      "id": "api",
+      "name": "API & Web Services",
+      "icon": "🌐",
+      "skills": ["RESTful API Development", "cURL integration"]
+    }
+  ],
+  "expertise": [
+    {
+      "title": "Backend Development",
+      "level": 95,
+      "description": "Laravel, PHP, API development, Database design"
+    },
+    {
+      "title": "Frontend Development",
+      "level": 85,
+      "description": "Nuxt.js, Vue.js, JavaScript, Tailwind CSS"
+    },
+    {
+      "title": "System Architecture",
+      "level": 80,
+      "description": "Scalable solutions, Design patterns, Performance optimization"
+    },
+    {
+      "title": "DevOps & Tools",
+      "level": 75,
+      "description": "Git, Docker, CI/CD, Deployment"
+    }
+  ]
+}

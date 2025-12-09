@@ -5,15 +5,15 @@
       <section id="home" class="mb-20 md:mb-32 scroll-mt-20">
         <SectionsHome />
       </section>
-      
+
       <section id="about" class="mb-20 md:mb-32 scroll-mt-20">
         <SectionsAbout />
       </section>
-      
+
       <section id="projects" class="mb-20 md:mb-32 scroll-mt-20">
         <SectionsProjects />
       </section>
-      
+
       <SectionsFooter />
     </div>
   </div>

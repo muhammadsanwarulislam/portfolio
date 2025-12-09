@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Projects",
+      "icon": "📁"
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "icon": "🚀"
+    },
+    {
+      "id": "nuxt",
+      "name": "Nuxt.js",
+      "icon": "⚡"
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "icon": "🟢"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "myGov Platform",
+      "description": "One-stop platform for government services (G2C, G2B, G2G) with robust form validation and AJAX integration.",
+      "longDescription": "A comprehensive government service portal that handles citizen services, business services, and government-to-government transactions. Implemented advanced form validation, AJAX-based dynamic updates, and complex data management systems.",
+      "image": "/assets/images/projects/1.png",
+      "technologies": ["PHP/Laravel", "MySQL", "jQuery", "AJAX", "Blade Templates"],
+      "category": ["laravel", "government"],
+      "isLive": true,
+      "liveLink": "https://www.mygov.bd",
+      "githubLink": "",
+      "features": [
+        "Government services platform",
+        "AJAX-based dynamic UI",
+        "Complex SQL queries",
+        "Form validation system"
+      ],
+      "year": 2024
+    },
+    {
+      "id": 2,
+      "title": "BSIT Platform",
+      "description": "Government service platform with custom OAuth2 authentication and scalable backend solutions.",
+      "longDescription": "Leading the development of OAuth2 authentication system for government services. Designed scalable backend architecture with Redis caching and optimized database queries.",
+      "image": "/assets/images/projects/3.png",
+      "technologies": ["PHP/Laravel", "MySQL", "OAuth2", "Redis", "REST API"],
+      "category": ["laravel", "government"],
+      "isLive": true,
+      "liveLink": "https://eservice.bsti.gov.bd",
+      "githubLink": "",
+      "features": [
+        "Custom OAuth2 implementation",
+        "Scalable backend architecture",
+        "Redis caching",
+        "Government compliance"
+      ],
+      "year": 2025
+    }
+  ]
+}

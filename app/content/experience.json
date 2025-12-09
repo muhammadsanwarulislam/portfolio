@@ -1,0 +1,50 @@
+{
+  "timeline": [
+    {
+      "id": 1,
+      "company": "Orange Business Development Ltd",
+      "position": "Software Engineer",
+      "location": "Baridhara DOHS, Lane -1, House - 171",
+      "duration": "May 2021 – Present",
+      "description": "Designed and implemented scalable backend solutions using Laravel and PHP",
+      "achievements": [
+        "Reduced API response times by 30% through optimization",
+        "Developed reusable Laravel packages (e.g., Organogram), saving ~15% project setup time",
+        "Collaborated with frontend developers to build Vue/Nuxt applications",
+        "Optimized MySQL database queries, improving data retrieval efficiency by 25%",
+        "Improved team productivity by 20% using ClickUp for workflow optimization"
+      ],
+      "technologies": ["PHP", "Laravel", "MySQL", "Nuxt.js", "Vue.js", "Redis"],
+      "color": "teal"
+    },
+    {
+      "id": 2,
+      "company": "BSIT Project",
+      "position": "Senior Software Engineer",
+      "duration": "January 2025 – Ongoing",
+      "description": "Leading implementation of custom OAuth2 features for government service platform",
+      "achievements": [
+        "Designing scalable backend solutions using Laravel for third-party system integration",
+        "Collaborating with cross-functional teams for API specifications",
+        "Optimizing database queries and implementing caching strategies to improve performance by 25%"
+      ],
+      "technologies": ["PHP/Laravel", "MySQL", "OAuth2", "RESTful APIs", "Redis"],
+      "color": "blue"
+    },
+    {
+      "id": 3,
+      "company": "myGov Platform",
+      "position": "Software Engineer",
+      "duration": "July 2024 – Ongoing",
+      "description": "One-stop platform for government services (G2C, G2B, G2G)",
+      "achievements": [
+        "Developed custom backend features using PHP (Laravel)",
+        "Implemented robust form validation using jQuery and Laravel",
+        "Integrated AJAX for dynamic UI updates, reducing page load times by 40%",
+        "Designed complex SQL queries for data management"
+      ],
+      "technologies": ["PHP/Laravel", "MySQL", "JavaScript", "jQuery", "AJAX", "Blade"],
+      "color": "green"
+    }
+  ]
+}

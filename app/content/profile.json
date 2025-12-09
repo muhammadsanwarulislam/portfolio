@@ -1,0 +1,44 @@
+{
+  "personal": {
+    "name": "Sanwarul Islam",
+    "title": "Software Engineer",
+    "currentRole": "Software Engineer at Orange Business Development Ltd",
+    "tagline": "PHP(Laravel), Javascript(Nuxt) Specialist",
+    "location": "Nikunja-2, Road-2, House-33, Dhaka",
+    "email": "muhammad.sanwarul94@gmail.com",
+    "phone": "+880 1774418388",
+    "about": "Software Engineer with 4+ years of expertise in Laravel, RESTful APIs, specializing in scalable backend solutions for government and enterprise platforms. Proven track record in optimizing performance (30% faster APIs), leading cross-functional teams, and implementing secure authentication systems.",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    "resumeUrl": "/Sanwarul Islam.pdf"
+  },
+  "education": {
+    "degree": "BSc in Computer Science & Engineering",
+    "university": "Varendra University, Rajshahi",
+    "duration": "2014 - 2018",
+    "cgpa": "3.47/4.00"
+  },
+  "stats": [
+    {
+      "label": "Years Experience",
+      "value": "4+",
+      "icon": "👨‍💻"
+    },
+    {
+      "label": "Projects Completed",
+      "value": "10+",
+      "icon": "🚀"
+    },
+    {
+      "label": "API Performance",
+      "value": "30%",
+      "subtext": "Improvement",
+      "icon": "⚡"
+    },
+    {
+      "label": "Team Productivity",
+      "value": "20%",
+      "subtext": "Boost",
+      "icon": "👥"
+    }
+  ]
+}

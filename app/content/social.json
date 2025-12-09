@@ -1,0 +1,33 @@
+{
+  "links": [
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/sanwarul",
+      "icon": "💼",
+      "color": "blue"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/muhammadsanwarulislam",
+      "icon": "🐙",
+      "color": "gray"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:muhammad.sanwarul94@gmail.com",
+      "icon": "✉️",
+      "color": "red"
+    },
+    {
+      "name": "Phone",
+      "url": "tel:+8801774418388",
+      "icon": "📱",
+      "color": "green"
+    }
+  ],
+  "cta": {
+    "resume": "/Sanwarul Islam.pdf",
+    "contact": "#contact",
+    "projects": "#projects"
+  }
+}

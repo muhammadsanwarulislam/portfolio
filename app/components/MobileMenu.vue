@@ -23,7 +23,6 @@ const isOpen = ref(false)
 const menuItems = [
     { id: '/', label: 'Home', icon: '🏠' },
     { id: 'about', label: 'About', icon: '👤' },
-    { id: 'projects', label: 'Projects', icon: '💻' },
     { id: 'skills', label: 'Skills', icon: '🛠' },
     { id: 'resume', label: 'Resume', icon: '📄' }
 ]
