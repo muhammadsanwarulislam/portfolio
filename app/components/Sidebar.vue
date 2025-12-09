@@ -1,9 +1,9 @@
 <template>
-    <aside class="w-72 bg-gray-800 h-screen flex flex-col items-center p-6">
+    <aside class="w-72 theme-surface h-screen flex flex-col items-center p-6 border-r theme-border">
         <!-- Profile Section -->
         <div class="flex flex-col items-center">
             <img :src='`/assets/images/1.png`' alt="Profile" class="rounded-full w-32 h-32 object-cover mb-4" />
-            <h2 class="text-lg font-semibold">{{ profile.personal.title }}</h2>
+            <h2 class="text-lg font-semibold theme-text">{{ profile.personal.title }}</h2>
             <p class="text-sm text-gray-400 text-center mt-2">
                 PHP | Laravel |October CMS | PHALCON | Vue | Nuxt | MySQL | Redis
             </p>
@@ -13,7 +13,7 @@
         <nav class="mt-10 space-y-3 w-full">
             <NuxtLink v-for="item in menuItems" :key="item.id" :to="`${item.id}`"
                 @click.prevent="scrollToSection(item.id)"
-                class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition">
+                class="flex items-center gap-3 px-4 py-2 rounded-lg theme-bg hover:theme-surface transition" active-class="bg-gradient-to-r from-teal-500/20 to-purple-500/20 border border-teal-500/30">
                 {{ item.icon }} {{ item.name }}
             </NuxtLink>
         </nav>

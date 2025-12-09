@@ -4,39 +4,23 @@
       <!-- Logo/Brand -->
       <div class="mb-6">
         <h3 class="text-2xl font-bold">
-          Sanwarul<span class="text-teal-400">.</span>
+          {{ profile.personal.name }}<span class="text-teal-400">.</span>
         </h3>
-        <p class="text-gray-400 mt-2">Full Stack Developer</p>
+        <p class="text-gray-400 mt-2">{{ profile.personal.title }}</p>
       </div>
 
       <!-- Social Links -->
       <div class="flex justify-center gap-6 mb-8">
-        <a href="#" class="text-gray-400 hover:text-teal-400 transition duration-300 text-xl" aria-label="GitHub">
-          <span class="inline-block w-10 h-10 bg-gray-800 rounded-full items-center justify-center">
-            <span>🐱</span>
-          </span>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-teal-400 transition duration-300 text-xl" aria-label="LinkedIn">
-          <span class="inline-block w-10 h-10 bg-gray-800 rounded-full items-center justify-center">
-            <span>💼</span>
-          </span>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-teal-400 transition duration-300 text-xl" aria-label="Twitter">
-          <span class="inline-block w-10 h-10 bg-gray-800 rounded-full items-center justify-center">
-            <span>🐦</span>
-          </span>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-teal-400 transition duration-300 text-xl" aria-label="Email">
-          <span class="inline-block w-10 h-10 bg-gray-800 rounded-full items-center justify-center">
-            <span>✉️</span>
-          </span>
+        <a v-for="link in socialLinks" :key="link.id" :href="link.url" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 hover:text-white transition">
+          {{ link.icon }}
         </a>
       </div>
 
       <!-- Copyright -->
       <div class="text-gray-500 text-sm">
-        <p>© {{ currentYear }} Sanwarul. All rights reserved.</p>
-        <p class="mt-2">Crafted with ❤️ by Sanwarul</p>
+        <p>© {{ currentYear }} {{profile.personal.name}}. All rights reserved.</p>
+        <p class="mt-2">Crafted with ❤️ by {{ profile.personal.name }}</p>
       </div>
 
       <!-- Back to Top -->
@@ -50,6 +34,9 @@
 </template>
 
 <script setup>
+const { getSocialLinks,getProfile } = useContent()
+const socialLinks = getSocialLinks()
+const profile = getProfile()
 const currentYear = new Date().getFullYear()
 
 const scrollToTop = () => {
